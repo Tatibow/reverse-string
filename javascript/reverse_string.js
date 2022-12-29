@@ -1,5 +1,20 @@
+/*
+
+UP:
+Reverse the string
+
+MP:
+- split the string to make it an array
+- use the reverse method on the array
+- join it back together to turn it back into a string
+- to keep the function pure I could also make a copy then reverse it
+*/
+
 function reverseString(str) {
-  // type your code here
+ const strCopy = str.slice();
+ return strCopy.split("").reverse().join("");
+
+// return str.split("").reverse().join("")
 }
 
 if (require.main === module) {
