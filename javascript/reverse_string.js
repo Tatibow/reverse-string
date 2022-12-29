@@ -1,5 +1,17 @@
+/*
+
+UP:
+Reverse the string
+
+MP:
+- split the string to make it an array
+- use the reverse method on the array
+- join it back together to turn it back into a string
+
+*/
+
 function reverseString(str) {
-  // type your code here
+ return str.split("").reverse().join("")
 }
 
 if (require.main === module) {
